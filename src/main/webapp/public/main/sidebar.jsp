@@ -22,8 +22,8 @@
 		data-toggle="dropdown"> Publisher <b class="caret"></b>
 	</a>
 		 <ul class="dropdown-menu">
-			<li><a id="author-list" href="#">Search</a></li>
-			<li><a id="author-add" href="#">Add</a></li>
+			<li><a id="publisher-list" href="#">Search</a></li>
+			<li><a id="publisher-add" href="#">Add</a></li>
 		</ul>
 	</li>
 </ul>
