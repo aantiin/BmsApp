@@ -1,1 +1,0 @@
-<div class="pager container">@ 2014 - Rino Wellyanto</div>
