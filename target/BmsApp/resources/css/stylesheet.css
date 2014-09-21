@@ -1,0 +1,312 @@
+body {
+    background-color: #fff;
+    margin: 40px;
+    font-family: Monaco, Verdana, Sans-serif;
+    font-size: 12px;
+    color: #4F5155;
+}
+
+a {
+    color: #056a02;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+}
+hr{
+    border-top: 0px transparent;
+    border-bottom: 1px solid #D0D0D0;
+    padding : 0 0 0 0;
+}
+
+h1 {
+    font-family: Monaco, Verdana, Sans-serif;
+    color: #444;
+    background-color: transparent;
+    border-bottom: 1px solid #D0D0D0;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px 0 0px 0;
+    padding: 5px 0 5px 0;
+}
+
+code {
+    font-family: Monaco, Verdana, Sans-serif;
+    font-size: 12px;
+    background-color: #f9f9f9;
+    border: 1px solid #D0D0D0;
+    color: #002166;
+    display: block;
+    margin: 14px 0 14px 0;
+    padding: 12px 10px 12px 10px;
+}
+
+#codex {
+    font-family: Monaco, Verdana, Sans-serif;
+    font-size: 12px;
+    background-color: #f9f9f9;
+    color: #002166;
+    
+    padding: 12px 10px 12px 10px;
+    border-right: 1px solid #D0D0D0;
+    border-left: 1px solid #D0D0D0;
+    border-bottom: 1px solid #D0D0D0;
+    border-top: 1px solid #D0D0D0;
+}
+
+#codex td,tr{
+    font-family: Monaco, Verdana, Sans-serif;
+    font-size: 12px;
+    background-color: #f9f9f9;
+    
+}
+
+codeh1 {
+    font-family: Monaco, Verdana, Sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #f9f9f9;
+    border: 1px solid #D0D0D0;
+    color: #056a02;
+    display: block;
+    margin: 0px 0 0px 0;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+}
+#login #inputsubmit1 {
+    font-family: Monaco, Verdana, Sans-serif;
+    border-left-color: #FFFFFF;
+    border-top-color: #FFFFFF;
+    border: 2px solid #CCCCCC;
+    margin: 10px 0px 10px 10px;
+    padding: 5px 0px 5px 0px;
+    width: 60px;
+    float: left;
+}
+#login #inputtext1, #login #inputtext2, #inputtext3 {
+    color: #999999;
+    font-family: Monaco, Verdana, Sans-serif;
+    border: 1px solid #CCCCCC;
+    padding: 2px 5px;
+    margin-bottom: .5em;
+    width: 180px;
+}
+#login label {
+    display: block;
+    font-family: Monaco, Verdana, Sans-serif;
+}
+#login p {
+    font-size: x-small;
+    padding-top: .2em;
+    margin: 0;
+}
+#content {
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 950px;
+
+}
+#footer {
+    font-size: 12px;
+    border-top: 1px solid #CCCCCC;
+    margin: 0 auto 2em auto;
+    width: 950px;
+    clear: both;
+}
+
+#header {
+    background-color: orange; no-repeat;
+    margin: 0 auto;
+    height: 130px;
+    width: 950px;
+}
+#main {
+    width: 700px;
+    float: left;
+}
+#content {
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 950px;
+
+}
+#sidebar {
+    width: 220px;
+    float: right;
+}
+
+p, blockquote, ul, ol {
+    line-height: 1.8em;
+    margin-bottom: 1.5em;
+}
+ul {
+    list-style: square;
+
+}
+#pendaftaran{
+    font-family: Monaco, Verdana, Sans-serif;
+    font-size: 12px;
+}
+#pendaftaran #select1{
+    width:55px;
+    padding:2px 5px;
+}
+
+#pendaftaran #select2{
+    width:75px;
+    padding:2px 5px;
+}
+
+#pendaftaran #select3{
+    width:175px;
+    padding:2px 5px;
+}
+#pendaftaran #select4{
+    width:160px;
+    padding:2px 5px;
+}
+#pendaftaran select5{
+    width:200px;
+    padding:2px 5px;
+}
+#pendaftaran #select6{
+    width:90px;
+    padding:2px 5px;
+}
+#pendaftaran #select7{
+    width:300px;
+    padding:2px 5px;
+}
+
+#pendaftaran select{
+    width:198px;
+    padding:2px 5px;
+}
+
+#pendaftaran label {
+    display: block;
+}
+
+#pendaftaran legend {
+    display: table-caption;
+    font-weight: bold;
+}
+#pendaftaran #inputsubmit1 {
+    font-family: Monaco, Verdana, Sans-serif;
+    border-left-color: #FFFFFF;
+    border-top-color: #FFFFFF;
+    border: 2px solid #CCCCCC;
+    margin: 10px 0px 10px 10px;
+    padding: 5px 0px 5px 0px;
+    width: 60px;
+    float: left;
+}
+#dtable{
+    font-family: Monaco, Verdana, Sans-serif;
+    font-size: 12px;
+}
+#dtable td,tr,th{
+    border:1px solid #CCCCCC;
+	background:white;
+	padding: 2px;
+}
+#dtable table1 th{
+	background:#F0EDED;
+}
+#dtable #latarjudul {
+	background:#09b105;
+	color: #FFFFFF;
+	font-size: 1em;
+	height: 20px;
+}
+#dtable #latarkhusus {
+	color:  #5e5e5e;
+	font-size: 1em;
+}
+#dtable #title1 {
+	color: #CCCCCC;
+	font-size: 1em;
+	height: 20px;
+}
+#dtable #select1 {
+	width:40px;
+    padding:2px 5px;
+}
+#dtable #select2 {
+	width:75px;
+    padding:2px 5px;
+}
+#surat{
+    font-family: Monaco, Verdana, Sans-serif;
+    font-size: 12px;
+}
+
+#surat #instansi{
+    color: #000000;
+    font-size: 14px;
+}
+#surat #instansi1{
+    color: #000000;
+    font-size: 24px;
+}
+#surat #instansi2{
+    color: #000000;
+    font-size: 10px;
+}
+#surat #instansi3{
+    color: #000000;
+    font-size: 12px;
+}
+#surat #instansi4{
+    color: #000000;
+    font-size: 16px;
+   
+}
+#surat #instansi5{
+    color: #000000;
+    font-size: 10px;
+}
+#surat #set{
+    font-family: Monaco, Verdana, Sans-serif;
+    font-size: 12px;
+    border:1px solid #000000;
+    background:white;
+    padding: 0px;
+    vertical-align: middle;
+    word-wrap:break-word;
+    width: 5ex;
+}
+
+#surat1{
+    font-family: Monaco, Verdana, Sans-serif;
+    color: #000000;
+    font-size: 12px;
+}
+#surat1 td,tr,th{
+    border:1px solid #000000;
+	background:white;
+	padding: 2px;
+}
+#surat1 #instansi{
+    color: #000000;
+    font-size: 16px;
+}
+#surat1 #instansi1{
+    color: #000000;
+    font-size: 24px;
+}
+#surat1 #instansi2{
+    color: #000000;
+    font-size: 10px;
+}
+#surat1 #instansi3{
+    color: #000000;
+    font-size: 12px;
+}
+
+
