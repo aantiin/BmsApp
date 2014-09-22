@@ -18,4 +18,5 @@ public class AuthorServiceImpl extends CommonServiceImpl<Author, Long>
 		super(authorDao);
 		this.authorDao = authorDao;
 	}
+	
 }

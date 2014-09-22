@@ -13,7 +13,7 @@ import id.web.antin.model.Publisher;
 
 @Repository("PublisherDao")
 public class PublisherDaoImpl extends CommonDaoImpl<Publisher, Long> implements PublisherDao{
-	private static Log log = LogFactory.getLog(AuthorDaoImpl.class);
+	private static Log log = LogFactory.getLog(PublisherDaoImpl.class);
 
 	@SuppressWarnings("unchecked")
 	@Override
@@ -39,10 +39,11 @@ public class PublisherDaoImpl extends CommonDaoImpl<Publisher, Long> implements 
 			query.setParameter("value", "%" + criterias.getValue() + "%");
 			break;
 		}
+		
+		log.info("query = " + sb.toString());
 		List<Publisher> result = query.list();
+		
 		log.info("result override query = " + result);
 		return result;
 	}
-
-
 }

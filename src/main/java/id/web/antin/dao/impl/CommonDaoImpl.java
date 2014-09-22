@@ -19,7 +19,7 @@ import id.web.antin.dao.CommonDao;
 import id.web.antin.helper.QueryHelper;
 
 @Transactional(propagation = Propagation.REQUIRED, readOnly = false)
-public class CommonDaoImpl<E, PK extends Serializable> implements
+public abstract class CommonDaoImpl<E, PK extends Serializable> implements
 		CommonDao<E, PK> {
 	private static Log log = LogFactory.getLog(CommonDaoImpl.class);
 	private SessionFactory sessionFactory;
@@ -66,7 +66,7 @@ public class CommonDaoImpl<E, PK extends Serializable> implements
 
 	@Override
 	public void update(E object) {
-		session().saveOrUpdate(object);
+		session().update(object);
 	}
 
 	@Override
@@ -114,24 +114,5 @@ public class CommonDaoImpl<E, PK extends Serializable> implements
 			break;
 		}
 		return c;
-	}
-
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<E> find(QueryHelper criteria, int page, int maxRows) {
-		String alias = "e";
-
-		Criteria c = session().createCriteria(persistentClass, alias);
-
-		createQueryCriteriaAlias(c, alias);
-
-		c.add(buildCriterion(criteria));
-
-		c.setFirstResult((page - 1) * maxRows);
-		c.setMaxResults(maxRows);
-
-		log.info("result .list = " + c.list());
-
-		return c.list();
 	}
 }

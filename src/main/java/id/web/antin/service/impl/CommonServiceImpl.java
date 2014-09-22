@@ -23,7 +23,7 @@ public class CommonServiceImpl<E, PK extends Serializable> implements
 
 	@Override
 	public E findById(PK id) {
-		return findById(id);
+		return dao.findById(id);
 	}
 
 	@Override

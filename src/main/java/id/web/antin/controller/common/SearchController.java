@@ -12,7 +12,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.ui.Model;
 
-public abstract class SearchController {
+public abstract class SearchController implements Constant{
 	private static Log log = LogFactory.getLog(SearchController.class);
 	
 	protected Map<String, String> fieldName = new HashMap<String, String>();
@@ -21,10 +21,10 @@ public abstract class SearchController {
 
 	public SearchController() {
 
-		buildCriteriaDictionary();
+		buildCriteria();
 	}
 
-	protected abstract void buildCriteriaDictionary();
+	protected abstract void buildCriteria();
 
 	public Map<String, String> getFieldNames() {
 		return fieldName;
@@ -36,9 +36,9 @@ public abstract class SearchController {
 		if (criteria == null || criteria.empty()) {
 			result = service.findAll();
 		} else {				
-			result = service.find(criteria, FIRST_PAGE, MAX_ROWS);
-			log.info("Result = "+result);
+			result = service.find(criteria, FIRST_PAGE, MAX_ROWS);			
 		}		
+		log.info("Result = "+result);
 		model.addAttribute(entity, result);
 		model.addAttribute("operators", getOperators());
 		model.addAttribute("criterias", getFieldNames());

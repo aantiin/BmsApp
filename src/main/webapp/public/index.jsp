@@ -7,5 +7,6 @@
 
 <div id="container">
 	
-	<h1>Selamat datang</h1>
+	<h1>Welcome</h1>
+	Please choose menu to start your activity.
 </div>

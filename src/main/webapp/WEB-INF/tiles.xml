@@ -25,6 +25,26 @@
 	<definition name="author-list" extends="defaultTemplate">
 		<put-attribute name="body" value="/public/authorList.jsp" />
 	</definition>
-	
+	<definition name="publisher-add" extends="defaultTemplate">
+		<put-attribute name="body" value="/public/publisherForm.jsp" />
+	</definition>
+	<definition name="publisher-list" extends="defaultTemplate">
+		<put-attribute name="body" value="/public/publisherList.jsp" />
+	</definition>
+	<definition name="category-add" extends="defaultTemplate">
+		<put-attribute name="body" value="/public/categoryForm.jsp" />
+	</definition>
+	<definition name="category-list" extends="defaultTemplate">
+		<put-attribute name="body" value="/public/categoryList.jsp" />
+	</definition>
+	<definition name="error" extends="defaultTemplate">
+		<put-attribute name="body" value="/public/error.jsp" />
+	</definition>
+	<definition name="author-remove" extends="defaultTemplate">
+		<put-attribute name="body" value="/public/removeConfirm.jsp" />
+	</definition>
+	<definition name="error" extends="defaultTemplate">
+		<put-attribute name="body" value="/public/error.jsp" />
+	</definition>
 
 </tiles-definitions>

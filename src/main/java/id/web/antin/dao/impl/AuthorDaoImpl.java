@@ -15,7 +15,7 @@ import org.springframework.stereotype.Repository;
 public class AuthorDaoImpl extends CommonDaoImpl<Author, Long> implements
 		AuthorDao {
 
-	private static Log log = LogFactory.getLog(AuthorDaoImpl.class);
+	private static final Log log = LogFactory.getLog(AuthorDaoImpl.class);
 
 	@SuppressWarnings("unchecked")
 	@Override

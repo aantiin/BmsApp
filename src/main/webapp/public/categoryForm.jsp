@@ -3,28 +3,28 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <div class="row-fluid">
-	<h1>Add Author</h1>
-	<form:form method="post" action="/author/add" commandName="author"
+	<h1>Category</h1>
+	<form:form method="post" action="/category/add" commandName="category"
 			class="form-horizontal">
 
 			<div class="form-group">
 				<label for="name" class="col-sm-2 control-label">Name</label>
 				<div class="col-sm-10">
-					<input type="text" name="name" id="name" value="${author.name}">
+					<input type="text" name="name" id="name" value="${category.name}">
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="contact" class="col-sm-2 control-label">Contact</label>
+				<label for="description" class="col-sm-2 control-label">Description</label>
 				<div class="col-sm-10">
-					<input type="text" name="contact" id="contact" value="${author.contact}">
-					<input type="hidden" name="id" id="id" value="${author.id}">
+					<input type="text" name="description" id="description" value="${category.description}">
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="col-sm-offset-2 col-sm-10">
-					<button id="author-add" type="submit" class="btn btn-default">submit</button>
-					<button id="author-cancel" type="submit" class="btn btn-default">cancel</button>
+					<button id="publisher-add" type="submit" class="btn btn-default">submit</button>
+					<button id="publisher-cancel" type="submit" class="btn btn-default">cancel</button>
 				</div>
 			</div>
 		</form:form>
+		<script src="/resources/js/pages/menu.js"></script>
 </div>

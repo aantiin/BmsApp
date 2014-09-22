@@ -1,8 +1,8 @@
 package id.web.antin.dao;
 
-import java.util.List;
+import id.web.antin.model.Category;
 
-import id.web.antin.model.Author;
+import java.util.List;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -18,27 +18,24 @@ import org.springframework.test.context.transaction.TransactionConfiguration;
 @ContextConfiguration(locations = { "classpath:/applicationContext.xml",
 		"classpath:/applicationContextDao.xml" })
 @TransactionConfiguration(defaultRollback = true, transactionManager = "transactionManager")
-public class AuthorDaoTest {
-	private static final Log log = LogFactory.getLog(AuthorDaoTest.class);
-
+public class CategoryDaoTest {
+	private static final Log log = LogFactory.getLog(CategoryDaoTest.class);
 	@Autowired
-	AuthorDao authorDao;
-
+	CategoryDao categoryDao;
+	
 	@Test
 	public void testAll() {
 
-		Author a = new Author();
-		a.setName("Masahiro Sawamura");
-		a.setContact("1234567");
-		authorDao.add(a);
+		Category a = new Category("fiction","it's fiction novel");		
+		categoryDao.add(a);
 		
-		Author result = authorDao.findById(a.getId());
+		Category result = categoryDao.findById(a.getId());
 
 		Assert.assertNotNull(result);
 		Assert.assertEquals(a.getId(), result.getId());
 		
-		authorDao.remove(result);
-		List<Author> list = authorDao.findAll();
+		categoryDao.remove(result);
+		List<Category> list = categoryDao.findAll();
 		
 		Assert.assertEquals(0,list.size());
 	}
@@ -47,15 +44,15 @@ public class AuthorDaoTest {
 	public void testFindAll() {
 		buildData();		
 
-		List<Author> list = authorDao.findAll();
+		List<Category> list = categoryDao.findAll();
 		log.info("List = "+list);
 		Assert.assertEquals(4, list.size());
 	}
 	
 	public void buildData(){
 		for(int i=0; i< 4; i++){
-			Author author = new Author("nama"+i, "contact"+i);		
-			authorDao.add(author);
+			Category author = new Category("name"+i, "description"+i);		
+			categoryDao.add(author);
 		}
-	}	
+	}
 }
